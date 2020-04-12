@@ -71,7 +71,7 @@ a:hover {
 }
 
 .tabs{
-  margin-top:0px;
+  margin-top:1vh;
   font-size:15px;
   padding:0px;
   list-style:none;
@@ -515,10 +515,6 @@ p {
     font-size: 30px !important;
 }
 
-.header-nav {
-    align-items: center;
-    flex-direction: column;
-}
 
 .header-menu {
     flex-wrap: wrap;
@@ -641,6 +637,14 @@ position: fixed !important;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+
+      .wrapper {
+    text-align: center;
+    margin: 50px auto;
+    margin-top: 15vh;
+    position: absolute;
+    z-index: 5;
+      }
     .nav__trigger {
         display: block;
         position: absolute;
@@ -741,7 +745,6 @@ position: fixed !important;
         max-width: 100%;
         color: black;
         text-align: left;
-        margin-top: -23vh;
     }
     .boxed {
         padding-top: 3% !important;
