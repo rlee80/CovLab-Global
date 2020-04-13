@@ -241,8 +241,14 @@ var global;
 	$("#learn").click(function(e) {
 		e.preventDefault();
 		openPage('page-about');
-		buildStack();
-		closeMenu();
+		openPage();
+		console.log("IT WORKSSS!")
+	});
+
+	$("#faq").click(function(e) {
+		e.preventDefault();
+		openPage('page-faqs');
+		openPage();
 		console.log("IT WORKSSS!")
 	});
 

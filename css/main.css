@@ -116,6 +116,77 @@ a:hover {
   border:none!important;
   color:#b64444 !important;
 }
+set1, .set2 {
+    margin: 0 7%;
+    width: 100%;
+}
+  
+  .set1 p {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 50px;
+  }
+
+  .set2 p {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 50px;
+  }
+  
+  .button {
+    padding: 1.25em 2em;
+  }
+  
+  .button:hover {
+    opacity: 0.8;
+    color:white;
+    text-decoration: none;
+  }
+  
+  .button:active {
+     -webkit-transform: scale(0.90);
+      -moz-transform: scale(0.90);
+      -ms-transform: scale(0.90);
+      -o-transform: scale(0.90);
+      transform: scale(0.90);
+  }
+  
+  .round {
+    border-radius: 0.250em; 
+    -moz-border-radius: 0.250em; 
+    -webkit-border-radius: 0.250em; 
+  }
+  
+  .block {
+    display: block;
+    width: 100%;
+
+  }
+  
+  .normal {
+    display:block;
+    text-align: center;
+    width: 80%;
+    margin: 0.5em 0.25em;
+    padding:5%;
+    border-radius: 50px;
+    font-weight: bold;
+  }
+  
+  .purple {
+    color: white;
+    background-color: rgba(238, 75, 75,0.8);
+  }
+  
+  .blue {
+    color: white;
+    background-color: rgba(194, 85, 85,0.8);
+  }
+  
+  .orange {
+    color: white;
+    background-color: rgba(238, 115, 115,0.8);
+  }
 
 .main {
     overflow: hidden;
@@ -564,7 +635,27 @@ position: fixed !important;
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
 
+    .set1, .set2 {
+        
+        width: 100%;
+        position: absolute;
+        display: contents;
+    }
+    
+    .normal {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 10%;
+        margin: 10px;
+        padding: 5%;
+        border-radius: 30px;
+        font-weight: bold;
+    }
+    .header-button{
 
+        display: flex;
+    }
     .justify-center{
 
       display: inline;
