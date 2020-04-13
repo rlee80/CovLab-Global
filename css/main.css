@@ -108,19 +108,19 @@ a:hover {
   z-index:1200;
   bottom:0;
   transition:all .4s linear;
-  
+
 }
 #tile-1 .nav-tabs .active
 {
   background-color:transparent!important;
   border:none!important;
-  color:#b64444 !important;
+  color: #b64444 !important;
 }
 set1, .set2 {
     margin: 0 7%;
     width: 100%;
 }
-  
+
   .set1 p {
     width: 85%;
     margin: 0 auto;
@@ -132,17 +132,17 @@ set1, .set2 {
     margin: 0 auto;
     font-size: 50px;
   }
-  
+
   .button {
     padding: 1.25em 2em;
   }
-  
+
   .button:hover {
     opacity: 0.8;
     color:white;
     text-decoration: none;
   }
-  
+
   .button:active {
      -webkit-transform: scale(0.90);
       -moz-transform: scale(0.90);
@@ -150,19 +150,19 @@ set1, .set2 {
       -o-transform: scale(0.90);
       transform: scale(0.90);
   }
-  
+
   .round {
-    border-radius: 0.250em; 
-    -moz-border-radius: 0.250em; 
-    -webkit-border-radius: 0.250em; 
+    border-radius: 0.250em;
+    -moz-border-radius: 0.250em;
+    -webkit-border-radius: 0.250em;
   }
-  
+
   .block {
     display: block;
     width: 100%;
 
   }
-  
+
   .normal {
     display:block;
     text-align: center;
@@ -172,17 +172,17 @@ set1, .set2 {
     border-radius: 50px;
     font-weight: bold;
   }
-  
+
   .purple {
     color: white;
     background-color: rgba(238, 75, 75,0.8);
   }
-  
+
   .blue {
     color: white;
     background-color: rgba(194, 85, 85,0.8);
   }
-  
+
   .orange {
     color: white;
     background-color: rgba(238, 115, 115,0.8);
@@ -192,7 +192,7 @@ set1, .set2 {
     padding-top: 10px;
     width: 1%;
   }
-  
+
   .socials{
     position: absolute;
     width: 100vw;
@@ -351,7 +351,7 @@ main.main.projects{
 }
 
 .card-text{
-    
+
 color:black;
 
 }
@@ -377,7 +377,7 @@ margin-top:15vh;
 .block{
 
   font-size: 30px;
-  
+
 }
 
 .btn {
@@ -542,7 +542,7 @@ p {
 .logo{
 
   margin-top: 5vh;
-  
+
   }
 
 
@@ -669,21 +669,21 @@ position: fixed !important;
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
 
     .set1, .set2 {
-        
+
         width: 100%;
         position: absolute;
         display: contents;
     }
-    
+
     .sec h1 {
         font-size: 2em;
     }
- 
+
     a.social {
         padding: 10px;
         width: 10%;
       }
-      
+
       .socials{
         position: absolute;
         width: 100vw;
@@ -691,9 +691,9 @@ position: fixed !important;
         right:0px;
         bottom:2vh;
       }
-    
-    
-    
+
+
+
   #front-social {
     width: 100%;
     background: transparent;
@@ -767,14 +767,14 @@ position: fixed !important;
         will-change: width, height, opacity, transform, clip-path;
         z-index: 1;
     }
-   
+
     img.logo.img-fluid{
 
         background-color: transparent;
         width:25%;
         position: absolute;
         margin-top:0px !important;
-        
+
         }
 
         .logo-link {
