@@ -112,12 +112,12 @@ html.js,
 }
 
 .link--faded {
-	color: #4f4f64;
+	color: #ffffff;
 }
 
 .link--faded:hover,
 .link--faded:focus {
-	color: #5c5edc;
+	color: #dc5c5c;
 }
 
 .link--page.link--faded {
@@ -152,8 +152,8 @@ html.js,
 .js .page {
 	position: relative;
 	z-index: 5;
-	overflow: hidden;
 	width: 100%;
+	overflow: hidden;
 	height: 100vh;
 	pointer-events: auto;
 	background: #2a2b30;

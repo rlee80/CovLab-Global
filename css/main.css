@@ -270,97 +270,55 @@ margin-top:15vh;
 
 }
 
+.block{
 
-/*Submit Button*/
+  font-size: 30px;
+  
+}
+
 .btn {
-  border: none;
-  border-radius: 3px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
-  margin-bottom: 15px;
-  position: relative;
-  transition: all 0.15s ease-in-out;
+  font-size: 14px;
+  padding: 10px 30px;
+  margin-right:5%;
+  cursor: pointer;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 30px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: inline-block;
 }
-.btn:hover,
 .btn:focus,
-.btn:active,
-.btn:active:focus {
-  outline: none;
-  transition: all 0.15s ease-in-out;
-}
-.btn:hover {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.15s ease-in-out;
-  transform: translateY(-1px);
-}
 .btn:active {
   box-shadow: none;
-  transition-duration: 0.05s;
-  transform: translateY(1px);
+  outline: none;
+  color: #fff;
 }
-.btn.btn-default:hover,
-.btn.btn-default:focus,
-.btn.btn-default:active {
-  background-color: #f8f8f8;
+.btn-common {
+  background-color: #bcdfd4;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
 }
-.btn.btn-default:active {
-  background-color: #eeeeee;
+.btn-common:hover {
+  color: #bcdfd4;
+  background: transparent;
+  border: 1px dotted #bcdfd4;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
-.btn.btn-info {
-  background-color: #3498db;
+.btn-border {
+  color: white;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 30px;
+  text-transform: uppercase;
+  z-index: 4 !important;
 }
-.btn.btn-info:hover,
-.btn.btn-info:focus,
-.btn.btn-info:active {
-  background-color: #2383c4;
-}
-.btn.btn-info:active {
-  background-color: #2077b2;
-}
-.btn.btn-primary {
-  background-color: #7caae7;
-}
-.btn.btn-primary:hover,
-.btn.btn-primary:focus,
-.btn.btn-primary:active {
-  background-color: #253544;
-}
-.btn.btn-primary:active {
-  background-color: #1e2a37;
-}
-.btn.btn-success {
-  background-color: #2ecc71;
-}
-.btn.btn-success:hover,
-.btn.btn-success:focus,
-.btn.btn-success:active {
-  background-color: #26ab5f;
-}
-.btn.btn-success:active {
-  background-color: #239a55;
-}
-.btn.btn-warning {
-  background-color: #f39c12;
-}
-.btn.btn-warning:hover,
-.btn.btn-warning:focus,
-.btn.btn-warning:active {
-  background-color: #d2850b;
-}
-.btn.btn-warning:active {
-  background-color: #be780a;
-}
-.btn.btn-danger {
-  background-color: #e74c3c;
-}
-.btn.btn-danger:hover,
-.btn.btn-danger:focus,
-.btn.btn-danger:active {
-  background-color: #df2e1b;
-}
-.btn.btn-danger:active {
-  background-color: #cd2a19;
-}
-
 /*Project Cards*/
 .card-custom {
   overflow: hidden;
