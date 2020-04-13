@@ -8,7 +8,11 @@
  * Copyright 2020, Codrops
  * http://www.codrops.com
  */
-;(function(window) {
+
+ 
+var global;
+
+(function(window) {
 
 	'use strict';
 
@@ -94,7 +98,7 @@
 	function initEvents() {
 		// menu button click
 		menuCtrl.addEventListener('click', toggleMenu);
-
+		
 		// navigation menu clicks
 		navItems.forEach(function(item) {
 			// which page to open?
@@ -104,6 +108,9 @@
 				openPage(pageid);
 			});
 		});
+
+
+
 
 		// clicking on a page when the menu is open triggers the menu to close again and open the clicked page
 		pages.forEach(function(page) {
@@ -115,6 +122,9 @@
 				}
 			});
 		});
+
+
+				
 
 		// keyboard navigation events
 		document.addEventListener( 'keydown', function( ev ) {
@@ -144,16 +154,22 @@
 		// stack gets the class "pages-stack--open" to add the transitions
 		classie.add(stack, 'pages-stack--open');
 		// reveal the menu
-		classie.add(nav, 'pages-nav--open');
+		classie.add(nav, 'pages-nav--open');                                   
 
 		// now set the page transforms
 		var stackPagesIdxs = getStackPagesIdxs();
 		for(var i = 0, len = stackPagesIdxs.length; i < len; ++i) {
 			var page = pages[stackPagesIdxs[i]];
+			global += pages[stackPagesIdxs[i]];
 			page.style.WebkitTransform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)'; // -200px, -230px, -260px
 			page.style.transform = 'translate3d(0, 75%, ' + parseInt(-1 * 200 - 50*i) + 'px)';
 		}
 	}
+
+	
+	
+
+	
 
 	// closes the menu
 	function closeMenu() {
@@ -178,6 +194,8 @@
 			page.style.WebkitTransform = 'translate3d(0,100%,0)';
 			page.style.transform = 'translate3d(0,100%,0)';
 		}
+		
+		console.log(id);
 
 		// set current
 		if( id ) {
@@ -194,6 +212,10 @@
 			isMenuOpen = false;
 		});
 	}
+
+	
+
+
 
 	// gets the current stack pages indexes. If any of them is the excludePage then this one is not part of the returned array
 	function getStackPagesIdxs(excludePageIdx) {
@@ -216,6 +238,24 @@
 		return idxs;
 	}
 
+	$("#learn").click(function(e) {
+		e.preventDefault();
+		openPage('page-about');
+		buildStack();
+		closeMenu();
+		console.log("IT WORKSSS!")
+	});
+
+	//Villager goes HMMMMMMMMMMMM...
+		
+
 	init();
+
+	//I NEED COFFEEE
+
+
+
+	
+	
 
 })(window);
